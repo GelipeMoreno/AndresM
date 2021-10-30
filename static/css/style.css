@@ -1,0 +1,33 @@
+*{
+    padding: 100;
+    margin: 10;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+.card{
+    background-color: #fff;
+}
+.title-card {
+    color:deeppink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Tipo de letra*/
+}
+.des-card {
+    color: red;
+    font-family: cursive;
+}
+.btn-card{
+    padding: 5px;
+    color: blue;
+    font-family: monospace;
+    background: #fafafa;
+    border-style: none;
+}
+
+.btn-card:hover{
+    /*Cuando hacemos el evento con el mouse*/
+    color: blue;
+    border-style: solid;
+    
+}
+
+

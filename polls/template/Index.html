@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}  <!--Vamos a especificar una parte de Django, isntrauciion-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" title='style'>
+
+    <p>Las tarjetas se usan para cuando tenemos muchos elementos para mostar</p>
+
+</head>
+<body>
+    <h1>Cards</h1>
+    <h2>Primera Opcion - Lo mas basico</h2>
+    <select name="Categorias" id="categorias">
+        <option value="#">Categoria 1</option>
+        <option value="#">Categoria 2</option>
+        <option value="#">Categoria 3</option>
+    </select>
+
+    <div class="contenedor">
+        <div class="card">
+            <h2 class="title-card">Segundo tipo de Tarjetas</h2>
+            <h3 class="des-card">Categoria 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn-card">Ver mas</button>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="card">
+            <h3 class="des-card">Categoria 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn-card">Ver mas</button>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="card">
+            <h3 class="des-card">Categoria 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn-card">Ver mas</button>
+        </div>
+    </div>
+
+</body>
+</html>
