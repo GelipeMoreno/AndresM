@@ -1,33 +1,179 @@
-*{
-    padding: 100;
-    margin: 10;
-    box-sizing: border-box;
-    background-color: #fafafa;
-}
-.card{
-    background-color: #fff;
-}
-.title-card {
-    color:deeppink;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Tipo de letra*/
-}
-.des-card {
-    color: red;
-    font-family: cursive;
-}
-.btn-card{
-    padding: 5px;
-    color: blue;
-    font-family: monospace;
-    background: #fafafa;
-    border-style: none;
-}
+/* === IMPORTANTE LEER ====================================================
+  ___ Recuerden de no utilizar selectores por elementos o etiquetas html __
+  ___ Se recomienda cambiarlas por clases ___
 
-.btn-card:hover{
-    /*Cuando hacemos el evento con el mouse*/
-    color: blue;
-    border-style: solid;
+  Modifique los estilos base desde aquí lo que requieran.
+  ================================================================== */
+  ul, ul li { margin: 0; padding: 0; list-style: none; }
+  h1, h2, h3, p, form { margin: 0; padding: 0; }
+  .clear { clear: both; }
+  img { border: none; }
+  
+  #contenedor {
+    width: 90%;
+    max-width: 900px;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  #cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
+    border: 2px solid #777;
+  }
+  
+  #cabecera { clear: both; }
+  #menu { clear: both; }
+  #lateral { float: left; width: 20%; }
+  #contenido { float: right; width: 78%; }
+  #contenido #principal { float: left; width: 78%; }
+  #contenido #secundario { float: right; width: 20%; }
+  #pie { clear: both; }
+  
+  
+  #cabecera #logo { float: left; }
+  #cabecera #buscador { float: right; }
+  
+  
+  #menu ul#menu_principal li { display: inline; float: left; }
+  
+  
+  #contenido #principal .articulo img { width: 100px; float: left; }
+  
+  
+  #pie .enlaces   { float: left; }
+  #pie .copyright { float: right; }
+  
+  /* === IMPORTANTE LEER ===================================================
+    Modifique los estilos desde aquí lo que requieran.
+    ================================================================== */
+  #cabecera,
+  #menu,
+  #lateral,
+  #lateral #noticias,
+  #lateral #publicidad,
+  #contenido,
+  #contenido #principal,
+  #contenido #secundario,
+  #pie {
+    padding: .5em;
+    border: none;
+  }
+  
+  #lateral {
+    padding: 0;
+  }
+  
+  #cabecera {
+    padding: 1em;
+  }
+  
+  #cabecera h1 {
+    background: #fff;
+    margin-bottom: 0em;
+  }
+  
+  #cabecera h1 span {
+    visibility: visible;
+    vertical-align:18%;
+    padding: 4px;
+    text-align: center;
+    font-size: 66px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  #menu {
+    margin-bottom: .50em;
+    color: whitesmoke;
+    border-bottom: 1px solid #eeeef8;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0px 2px;
+    text-align: none;
+  }
+  
+  #contenido {
+    width: 77%;
+    padding: 0;
     
-}
+  }
+  
+  #noticias > p > a {
+    display: block;
+    
+    
+  }
+  #Title {
+    font-size: 25px;
+  }
+  #sub_title {
+    line-height: 85%;
+  }
+  #contenido #principal {
+    width: 73%;
+    text-align: justify;
+    font-size: 17px;
+  }
+  #h2 {
+    margin-bottom: .50em;
+    font-size: 25px;
+    
+  }
+  #imagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
 
+  }
+  #contenido #secundario {
+    border: 1px solid rgb(106, 166, 245);;
+    background-color: rgb(255, 251, 251);
+    display: block
+  }
+  
+  #contenido #secundario h2 {
+      background: rgb(0, 0, 0);
+      padding: .2em;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: right;
+      color: rgb(255, 255, 255);
+  }
+  #letra{
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  #pie {
+    display: block;
+    padding: .5em 0;
+    margin-top: 1em;
+    border-top: 1px solid #0f0e0e;
+    border-bottom: 1px solid #0f0e0e;
+    background: #F8F8F8;
+  }
+  
+  #contenido #principal .articulo {
+    margin-bottom: 1em;
+  }
+  
+  #contenido #principal .articulo img { 
+    margin: .5em;
+  }
+  
+  #lateral #noticias {
+    border: 1px solid #C5C5C5;
+    background: whitesmoke;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    text-align: left;
+    margin-top: 0em
+  }
+  
+  #lateral #publicidad {
+    margin-top: 1em;
+    border: 1px dashed black;
+    background: rgb(182, 241, 147);
+  }
 
+  #span {
+    padding: none;
+    margin: top;
+    height: 10px;
+  }

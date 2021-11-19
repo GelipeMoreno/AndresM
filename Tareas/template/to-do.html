@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/to-do.css' %}" title='style'>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="tarea">
+            <h1 class=" titulo two"> &#128293;Nueva Tareas</h1>
+            <input id="Tarea" type="text">
+            <input id="agregar" type="button" value="&#128073;&#127995; Agregar Tarea">
+        </nav>
+        <div class="pendientes">
+            <h2 class="titulo">Tareas pendientes</h2>
+            <div id="pendientes" class="list">
+                <!--<div class="card card-two card-black">
+                    <p class="area"> <span>Nombre de La tarea</span></p>
+                    <button class="fin">&#128077;&#127995;</button>
+                    <button class="eliminar">&#128078;&#127995;</button>
+                </div>
+                <div class="card card-two card-black">
+                    <p><span>Nombre de La tarea</span></p>
+                    <button class="fin">&#128077;&#127995;</button>
+                    <button class="eliminar">&#128078;&#127995;</button>
+                </div>
+                <div class="card card-two card-black">
+                    <p><span></span></p>
+                    <button class="fin">&#128077;&#127995;</button>
+                    <button class="eliminar">&#128078;&#127995;</button>
+                </div>-->
+            </div>
+        </div>
+        <div class="finalizado">
+            <h2 class="titulo">Tareas finalizadas</h2>
+            <div id="end" class="list">
+                <!--<div class="card card-two card-black">
+                <p>&#128681;<span>Nombre de La tarea</span></p>
+            </div>
+            <div class="card card-two card-black">
+                <p>&#128681;<span>Nombre de La tarea</span></p>
+            </div>
+                <div class="card card-two card-black">
+                <p>&#128681;<span>Nombre de La tarea</span></p>-->
+            </div>
+        </div>
+
+        </div>
+    </div>    
+</body>
+ <script src="{% static 'js/fecha.js' %}"></script>
+ <script src="{% static 'js/to-do.js' %}"></script>
+</html> 
+

@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MiMascota.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['./polls/template',],
+        'DIRS': ['./polls/template','./Tareas/template',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

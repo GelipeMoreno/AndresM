@@ -1,15 +1,11 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(requets):
-    return HttpResponse('''<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hellou, Hellou!!!</h1>
-</body>
-</html>''')
+def index(request):
+        return HttpResponse(render(request = request,template_name='Index.html',context={}))
+
+def index2(request, query):
+        return HttpResponse(render(request = request,template_name='Index.html',context={"query" : query}))
+
+
+    #return HttpResponse(render(request = requets,template_name='Index.html',context={"query" : query}))

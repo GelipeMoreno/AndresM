@@ -19,7 +19,9 @@ from django.urls.conf import include
 from . import views
 
 urlpatterns = [
-    path('' ,views.index),
+    path('', views.index),
+    path('query/<str:query>', views.index2),
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
+    path('Tareas/', include('Tareas.urls')),
     ]
