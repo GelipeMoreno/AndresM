@@ -33,10 +33,13 @@
 }
 .card {
     padding: 10px;
-    background-color: rgba(245, 245, 245, 0.945);
     margin: 10px 0px;            
-    border-radius: 10px;
-    
+    border-radius: 10px;    
+}
+
+.card-white{
+    background-color: rgba(255, 255, 255, 0.945);
+
 }
 .tarea{
     /*grid-column: x0/ x3;*/
@@ -81,4 +84,8 @@ span {
 }
 .tarea, .pendientes, .finalizado {
     margin-top: 15px;
+}
+.card-checked {
+    background-color: rgb(0, 0, 0);
+    text-decoration: underline;
 }
